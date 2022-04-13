@@ -1,0 +1,96 @@
+.deliciouses-section {
+  padding: 80px 0;
+}
+
+.contact-section {
+  padding: 24px 0;
+
+  @media (min-width: $breakpoint-md) {
+    padding: 84px 0 40px;
+  }
+}
+
+.contact {
+  @media (min-width: $breakpoint-md) {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__img {
+    display: none;
+
+    @media (min-width: $breakpoint-md) {
+      display: block;
+      width: 400px;
+      flex-shrink: 0;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__box {
+    width: 100%;
+  }
+
+  &__group {
+    width: 100%;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -0.04em;
+    margin-bottom: 30px;
+    text-align: center;
+
+    @media (min-width: $breakpoint-md) {
+      margin-bottom: 80px;
+      text-align: left;
+      font-size: 64px;
+      line-height: 78px;
+    }
+  }
+
+  &__name {
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    color: rgba($black, 0.6);
+    text-transform: uppercase;
+  }
+}
+
+.input {
+  position: relative;
+
+  &__input {
+    width: 100%;
+    padding: 18px 20px;
+    border-radius: 16px;
+    background-color: $white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    &.height {
+      min-height: 200px;
+      max-height: 340px;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    i {
+      font-size: 20px;
+    }
+  }
+}

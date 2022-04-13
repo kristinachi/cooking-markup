@@ -1,0 +1,101 @@
+.btn {
+  display: inline-block;
+  min-width: 200px;
+  border-radius: 16px;
+  color: $black;
+  text-align: center;
+  line-height: 20px;
+  padding: 18px 24px;
+  transition: all 0.3s ease;
+  border: 2px solid;
+
+  &:hover {
+    transition: all 0.3s ease;
+  }
+
+  &.primary-btn {
+    background-color: $lightblue;
+    border-color: $lightblue;
+
+    &:hover {
+      background-color: transparent;
+      color: $black;
+    }
+
+    &.outline-btn {
+      background-color: transparent;
+      color: $lightblue;
+
+      &:hover {
+        background-color: $lightblue;
+        color: $black;
+      }
+    }
+  }
+
+  &.secondary-btn {
+    background-color: $pink;
+    border-color: $pink;
+
+    &:hover {
+      background-color: transparent;
+      color: $pink;
+    }
+
+    &.outline-btn {
+      background-color: transparent;
+      color: $pink;
+
+      &:hover {
+        background-color: $pink;
+        color: $white;
+      }
+    }
+  }
+
+  &.dark-btn {
+    background-color: $black;
+    border-color: $black;
+    color: $white;
+
+    &:hover {
+      background-color: transparent;
+      color: $black;
+    }
+
+    &.outline-btn {
+      background-color: transparent;
+      color: $black;
+
+      &:hover {
+        background-color: $black;
+        color: $white;
+      }
+    }
+  }
+
+  &.inst-btn {
+    display: flex;
+    align-items: center;
+
+    i {
+      font-size: 22px;
+      margin-left: 16px;
+    }
+  }
+
+  &.btn-search {
+    min-width: 0;
+    padding: 10px;
+
+    @media (min-width: $breakpoint-xs) {
+      min-width: 160px;
+      padding: 22px 46px;
+    }
+
+    &:hover {
+      background-color: rgba($black, 0.8);
+      color: $white;
+    }
+  }
+}

@@ -1,0 +1,130 @@
+.footer-section {
+  padding: 30px 0;
+
+  @media (min-width: $breakpoint-sm) {
+    padding: 60px 0;
+  }
+}
+
+.line {
+  margin: 28px 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba($black, 0.1);
+
+  @media (min-width: $breakpoint-xs) {
+    margin: 48px 0;
+  }
+}
+
+.footer-top {
+  @media (min-width: $breakpoint-xs) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__img {
+    width: 110px;
+    margin-bottom: 16px;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__box {
+    margin-bottom: 30px;
+
+    @media (min-width: $breakpoint-xs) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__text {
+    line-height: 28px;
+    color: rgba($black, 0.6);
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    margin: 0 -16px;
+
+    @media (min-width: $breakpoint-sm) {
+      margin: 0 -30px;
+    }
+
+    li {
+      padding: 0 16px;
+
+      @media (min-width: $breakpoint-sm) {
+        padding: 0 30px;
+      }
+    }
+
+    a {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: -0.02em;
+      color: $black;
+
+      &:hover {
+        color: $pink;
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  @media (min-width: $breakpoint-xs) {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    margin: 0 -10px;
+
+    li {
+      padding: 0 10px;
+    }
+
+    a {
+      font-size: 22px;
+      color: $black;
+
+      &:hover {
+        color: $pink;
+      }
+    }
+  }
+
+  &__fake {
+    display: none;
+
+    @media (min-width: $breakpoint-xs) {
+      display: block;
+      width: 134px;
+    }
+  }
+
+  &__author {
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: rgba($black, 0.6);
+    margin-bottom: 30px;
+
+    @media (min-width: $breakpoint-xs) {
+      margin-bottom: 0;
+    }
+
+    span {
+      color: $pink;
+    }
+  }
+}

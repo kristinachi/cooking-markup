@@ -1,0 +1,44 @@
+.checkbox-btn {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border: 2px solid $lightblue-1;
+  border-radius: 50%;
+  background-color: $white;
+
+  i {
+    font-size: 14px;
+    opacity: 0;
+    transition: all 0.3s ease;
+
+    &.active {
+      opacity: 1;
+      color: $black;
+    }
+  }
+}
+
+.checkbox-text {
+  display: inline-block;
+  padding-left: 24px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+
+  &.active {
+    text-decoration: line-through;
+    color: rgba($black, 0.6);
+    opacity: 0.2;
+  }
+}
+
+.checkbox input:checked + .checkbox-btn i {
+  opacity: 1;
+  color: $black;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,68 @@
+.mini-card {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    180deg,
+    rgba(112, 130, 70, 0) 0%,
+    rgba(112, 130, 70, 0.1) 100%
+  );
+  border-radius: 30px;
+  padding: 100px 50px 30px;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 80px;
+  position: relative;
+  cursor: pointer;
+
+  @media (min-width: $breakpoint-lg) {
+    margin-bottom: 0;
+  }
+
+  &__img {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: 70%;
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.02em;
+  }
+
+  &.green {
+    background: linear-gradient(
+      180deg,
+      rgba(108, 198, 63, 0) 0%,
+      rgba(108, 198, 63, 0.1) 100%
+    );
+  }
+
+  &.red {
+    background: linear-gradient(
+      180deg,
+      rgba(204, 38, 27, 0) 0%,
+      rgba(204, 38, 27, 0.1) 100%
+    );
+  }
+
+  &.orange {
+    background: linear-gradient(
+      180deg,
+      rgba(240, 158, 0, 0) 0%,
+      rgba(240, 158, 0, 0.1) 100%
+    );
+  }
+
+  &.gray {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.05) 100%
+    );
+  }
+}

@@ -1,0 +1,454 @@
+.hero-section {
+  padding: 30px 0;
+
+  @media (min-width: $breakpoint-sm) {
+    padding: 50px 0 80px;
+  }
+}
+
+.hero {
+  background-color: $lightblue;
+  border-radius: 30px;
+  letter-spacing: -0.04em;
+
+  @media (min-width: $breakpoint-lg) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__box {
+    padding: 20px;
+
+    @media (min-width: $breakpoint-lg) {
+      padding: 50px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    padding: 20px;
+
+    @media (min-width: $breakpoint-lg) {
+      width: 660px;
+      flex-shrink: 0;
+      padding: 0;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      border-radius: 30px;
+
+      @media (min-width: $breakpoint-lg) {
+        border-radius: 0 30px 30px 0;
+      }
+    }
+  }
+
+  &__label {
+    background-color: $white;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    max-width: 165px;
+
+    a {
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+      color: $black;
+    }
+
+    img {
+      display: block;
+      width: 24px;
+      margin-right: 14px;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 44px;
+    margin-bottom: 24px;
+
+    @media (min-width: $breakpoint-xs) {
+      font-size: 64px;
+      line-height: 76px;
+    }
+  }
+
+  &__text {
+    line-height: 28px;
+    color: rgba($black, 0.6);
+    margin-bottom: 30px;
+  }
+
+  &__mark {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 50px;
+
+    @media (min-width: $breakpoint-lg) {
+      margin-bottom: 100px;
+    }
+  }
+
+  &__footer {
+    @media (min-width: $breakpoint-xs) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__profile {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+
+    @media (min-width: $breakpoint-xs) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__people {
+    border-radius: 50%;
+    background-color: $lightblue;
+    overflow: hidden;
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__name {
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 8px;
+
+    a {
+      color: $black;
+    }
+  }
+
+  &__date {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba($black, 0.6);
+  }
+
+  &__btn {
+    display: flex;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $white;
+      background-color: $black;
+      padding: 20px 38px;
+      border-radius: 16px;
+
+      &:hover {
+        background-color: rgba($black, 0.8);
+      }
+    }
+
+    span {
+      padding-right: 17px;
+    }
+
+    i {
+      font-size: 20px;
+    }
+  }
+}
+
+.label {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 30px;
+  padding: 10px 20px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+
+  i {
+    font-size: 24px;
+  }
+
+  span {
+    padding-left: 10px;
+    color: rgba($black, 0.6);
+  }
+}
+
+.categories-section {
+  padding-top: 20px;
+
+  @media (min-width: $breakpoint-sm) {
+    padding: 80px 0 70px;
+  }
+}
+
+.categories {
+  &__box {
+    margin-bottom: 140px;
+
+    @media (min-width: $breakpoint-xs) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: -0.04em;
+    text-align: center;
+  }
+
+  &__btn {
+    display: none;
+    @media (min-width: $breakpoint-xs) {
+      display: block;
+    }
+  }
+}
+
+.recipes-section {
+  padding-bottom: 30px;
+
+  @media (min-width: $breakpoint-sm) {
+    padding: 40px 0 50px;
+  }
+}
+
+.box {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+
+  &__title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: -0.04em;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    line-height: 28px;
+    color: rgba($black, 0.6);
+  }
+
+  &.box--lg {
+    max-width: 840px;
+    margin-bottom: 40px;
+
+    @media (min-width: $breakpoint-sm) {
+      margin-bottom: 80px;
+    }
+  }
+}
+
+.card-section {
+  padding: 20px 0 30px;
+
+  @media (min-width: $breakpoint-sm) {
+    padding: 40px 0 80px;
+  }
+}
+
+.chef-section {
+  padding: 20px 0 30px;
+
+  @media (min-width: $breakpoint-sm) {
+    padding: 40px 0 80px;
+  }
+}
+
+.chef {
+  @media (min-width: $breakpoint-xs) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: -0.04em;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    line-height: 28px;
+    color: rgba($black, 0.6);
+    margin-bottom: 72px;
+  }
+
+  &__box {
+    margin-bottom: 30px;
+
+    @media (min-width: $breakpoint-sm) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__img {
+    width: 100%;
+
+    @media (min-width: $breakpoint-lg) {
+      width: 710px;
+      flex-shrink: 0;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.instagram-section {
+  padding: 30px 0;
+  background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #e7f9fd 100%);
+
+  @media (min-width: $breakpoint-sm) {
+    padding: 80px 0;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.delicious-section {
+  padding: 60px 0 40px;
+
+  @media (min-width: $breakpoint-sm) {
+    padding: 160px 0 80px;
+  }
+}
+
+.delicious {
+  margin-bottom: 30px;
+
+  @media (min-width: $breakpoint-xs) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    gap: 154px;
+    margin-bottom: 80px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 36px;
+    letter-spacing: -0.04em;
+    margin-bottom: 18px;
+
+    @media (min-width: $breakpoint-md) {
+      font-size: 48px;
+      line-height: 58px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__text {
+    line-height: 28px;
+    color: rgba($black, 0.6);
+  }
+}
+
+.inbox-section {
+  padding: 40px 0;
+
+  @media (min-width: $breakpoint-sm) {
+    padding: 80px 0;
+  }
+}
+
+.inbox {
+  display: block;
+  background: url(../img/rucola.png), $lightblue;
+  background-size: 160px;
+  background-repeat: no-repeat;
+  background-position: bottom 20% right -20%;
+  border-radius: 60px;
+  height: 100%;
+  padding: 40px 20px;
+
+  @media (min-width: $breakpoint-xs) {
+    background-position: bottom 20% right;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    padding: 80px 0;
+    background: url(../img/fresh-salad.png), url(../img/plate.png), $lightblue;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 280px, 280px;
+    background-position: bottom left, bottom right;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    background: url(../img/fresh-salad.png), url(../img/rucola.png),
+      url(../img/plate.png), $lightblue;
+    background-size: 380px, 140px, 300px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+
+    background-position: bottom left, 76% 72%, bottom right;
+  }
+}
+
+.inbox-inner {
+  max-width: 620px;
+  margin: 0 auto;
+
+  &__title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.04em;
+    margin-bottom: 24px;
+    text-align: center;
+
+    @media (min-width: $breakpoint-xs) {
+      font-size: 48px;
+      line-height: 58px;
+    }
+  }
+
+  &__text {
+    line-height: 28px;
+    margin-bottom: 64px;
+    text-align: center;
+  }
+
+  &__search {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}

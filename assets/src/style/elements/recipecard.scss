@@ -1,0 +1,128 @@
+.recipe-card {
+  display: flex;
+  flex-direction: column;
+  background: $gradient-1;
+  border-radius: 30px;
+  padding: 16px 16px 32px 16px;
+  width: 100%;
+
+  &__img {
+    position: relative;
+    margin-bottom: 24px;
+  }
+
+  &__like {
+    background-color: $white;
+    color: $lightblue-1;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover {
+      color: $pink;
+    }
+
+    &.active {
+      color: $pink;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.04em;
+    margin-bottom: 24px;
+  }
+
+  &__mark {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+
+    i {
+      font-size: 24px;
+    }
+
+    span {
+      color: rgba($black, 0.6);
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: -0.02em;
+      padding-left: 10px;
+    }
+  }
+
+  &.recipe-card--sm {
+    background: $white;
+    padding: 0;
+
+    .recipe-card__img {
+      margin-bottom: 16px;
+    }
+
+    .recipe-card__title {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+}
+
+.foodieland-card {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 16px 32px 16px;
+  background: url(../img/healthyfood.png),
+    linear-gradient(180deg, #357355 0%, #1d483b 100%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  min-height: 434px;
+
+  @media (min-width: $breakpoint-xs) {
+    min-height: 0;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 30px;
+    color: $white;
+    text-align: center;
+    font-style: italic;
+    max-width: 180px;
+    margin: 0 auto;
+  }
+
+  &__link {
+    text-align: center;
+    margin-top: auto;
+
+    a {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: -0.02em;
+      color: rgba($white, 0.6);
+    }
+  }
+
+  &.foodieland-card--lg {
+    height: 343px;
+  }
+}
